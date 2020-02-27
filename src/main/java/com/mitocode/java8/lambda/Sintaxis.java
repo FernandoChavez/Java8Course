@@ -5,6 +5,8 @@ public class Sintaxis {
 	public double probarSintaxis() {
 		Operacion operacion = (double x, double y) -> (x + y) / 2;
 		//Operacion operacion = (double x, double y) -> {return (x + y) / 2;};
+		
+		
 		/*
 		Operacion operacion = (double x, double y) -> {
 			double a = 2.0;
@@ -12,8 +14,14 @@ public class Sintaxis {
 			return (x + y)/2 +2;
 		};
 		*/
+		
+		
 		//Operacion operacion = (x, y) -> (x + y) / 2;
+		
+		
 		//Operacion operacion = () ->2;
+		
+		
 		/*
 		Operacion operacion = () -> {
 			int x = 2;
@@ -21,12 +29,12 @@ public class Sintaxis {
 			return x + y;
 		};
 		*/
+		
 		//return operacion.calcularPromedio();
 		return operacion.calcular(2, 3);
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Sintaxis app = new Sintaxis();
 		System.out.println(app.probarSintaxis());
 

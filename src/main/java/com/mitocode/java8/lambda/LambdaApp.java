@@ -44,7 +44,6 @@ public class LambdaApp {
 
 			@Override
 			public double calcularPromedio(double n1, double n2) {
-				// TODO Auto-generated method stub
 				return (n1+n2)/2;
 			}
 			

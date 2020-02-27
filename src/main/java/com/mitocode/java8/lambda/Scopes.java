@@ -7,11 +7,14 @@ public class Scopes {
 	public double probarLocalVariable() {
 		
 		final double n3 = 3;
+		
+		//Cuando trabajamos en una clase anonima y necesitamos hacer referencia a una variable local, 
+		//es necesario que la variable local sea definido como "final". Con final, indicamos que 
+		//x variable no cambiará su valor.
 		Operacion op = new Operacion() {
 
 			@Override
 			public double calcular(double n1, double n2) {
-				// TODO Auto-generated method stub
 				return n1 + n2 + n3;
 			}
 			
